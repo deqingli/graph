@@ -1,0 +1,95 @@
+{
+    "input": [
+        {
+            "data_type": "FLOAT",
+            "name": "X",
+            "shape": [
+                "1"
+            ]
+        },
+        {
+            "data_type": "FLOAT",
+            "name": "W1",
+            "shape": [
+                "1"
+            ]
+        },
+        {
+            "data_type": "FLOAT",
+            "name": "B1",
+            "shape": [
+                "1"
+            ]
+        },
+        {
+            "data_type": "FLOAT",
+            "name": "W2",
+            "shape": [
+                "1"
+            ]
+        },
+        {
+            "data_type": "FLOAT",
+            "name": "B2",
+            "shape": [
+                "1"
+            ]
+        }
+    ],
+    "name": "MLP",
+    "node": [
+        {
+            "input": [
+                "X",
+                "W1",
+                "B1"
+            ],
+            "name": "1",
+            "opType": "FC",
+            "output": [
+                "H1"
+            ]
+        },
+        {
+            "input": [
+                "H1"
+            ],
+            "name": "2",
+            "opType": "Relu",
+            "output": [
+                "R1"
+            ]
+        },
+        {
+            "input": [
+                "R1",
+                "W2",
+                "B2"
+            ],
+            "name": "3",
+            "opType": "FC",
+            "output": [
+                "Y"
+            ]
+        }
+    ],
+    "edge": [
+        {"source": "X", "target": "1", "label": "label1"},
+        {"source": "W1", "target": "1", "label": "label2"},
+        {"source": "B1", "target": "1", "label": "label3"},
+        {"source": "1", "target": "2", "label": "label4"},
+        {"source": "2", "target": "3", "label": "label5"},
+        {"source": "W2", "target": "3", "label": "label6"},
+        {"source": "B2", "target": "3", "label": "label7"},
+        {"source": "3", "target": "Y", "label": "label8"}
+    ],
+    "output": [
+        {
+            "data_type": "FLOAT",
+            "name": "Y",
+            "shape": [
+                "1"
+            ]
+        }
+    ]
+}

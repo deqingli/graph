@@ -1,0 +1,24 @@
+{
+    "name": "echarts-flowgraph",
+    "version": "1.0.0",
+    "description": "ECharts flowgraph extension based on dagre.js",
+    "main": "index.js",
+    "author": {
+        "name": "deqingli",
+        "email": "annong035@gmail.com"
+    },
+    "license": "BSD",
+    "dependencies": {
+        "echarts": ">=3.8.2",
+        "zrender": ">=3.7.2",
+        "dagre": ">=0.73"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/deqingli/graph.git"
+    },
+    "devDependencies": {
+        "webpack": "^1.13.3",
+        "webpack-link": "^0.2.0"
+    }
+  }
