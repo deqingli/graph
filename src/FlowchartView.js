@@ -1,13 +1,13 @@
 
 var echarts = require('echarts/src/echarts');
-var dagre = reuire('dagre');
+var dagre = require('dagre');
 var zrUtil = require('zrender/src/core/util');
 var layoutUtil = require('echarts/src/util/layout');
 var graphic = require('echarts/src/util/graphic');
 
 echarts.extendChartView({
-    
-    type: 'flowgraph',
+
+    type: 'flowchart',
 
     render: function (seriesModel, ecModel, api) {
 
@@ -21,7 +21,7 @@ echarts.extendChartView({
         var nodes = graphData.nodes;
         var edges = graphData.edges;
         var WIDTH = 15;
-        var HEIGHT = 10
+        var HEIGHT = 10;
 
         var dagreGraph = new dagre.graphlib.Graph({
             directed: true,
@@ -72,12 +72,12 @@ echarts.extendChartView({
                 }
             });
 
-            group.add(edge);
+            group.add(curve);
         });
 
     },
 
-    dispose: fucntion () {
+    dispose: function () {
         // nothing to dispose
     }
 });

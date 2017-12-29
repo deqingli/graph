@@ -3,7 +3,7 @@ var echarts = require('echarts/lib/echarts');
 
 echarts.extendSeriesModel({
 
-    type: 'series.flowgraph',
+    type: 'series.flowchart',
 
     layoutInfo: null,
 

@@ -1,0 +1,3 @@
+
+require('./FlowchartSeries');
+require('./FlowchartView');

@@ -1,13 +1,13 @@
 {
-    "name": "echarts-flowgraph",
+    "name": "echarts-flowchart",
     "version": "1.0.0",
-    "description": "ECharts flowgraph extension based on dagre.js",
+    "description": "ECharts flowchart extension based on dagre.js",
     "main": "index.js",
     "author": {
         "name": "deqingli",
         "email": "annong035@gmail.com"
     },
-    "license": "BSD",
+    "license": "MIT",
     "dependencies": {
         "echarts": ">=3.8.2",
         "zrender": ">=3.7.2",
