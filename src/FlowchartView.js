@@ -1,9 +1,9 @@
 
-var echarts = require('echarts/src/echarts');
+var echarts = require('echarts/lib/echarts');
 var dagre = require('dagre');
-var zrUtil = require('zrender/src/core/util');
-var layoutUtil = require('echarts/src/util/layout');
-var graphic = require('echarts/src/util/graphic');
+var zrUtil = require('zrender/lib/core/util');
+var layoutUtil = require('echarts/lib/util/layout');
+var graphic = require('echarts/lib/util/graphic');
 
 echarts.extendChartView({
 
