@@ -16,14 +16,14 @@ require.config({
             location: '../../echarts/dist',
             name: 'echarts'
         },
-        {
-            main: 'zrender',
-            location: '../../zrender/dist',
-            name: 'zrender'
-        },
+        // {
+        //     main: 'zrender',
+        //     location: '../../zrender',
+        //     name: 'zrender'
+        // },
         {
             main: 'dagre',
-            location: '../../dagre/dist/dagre.js',
+            location: '../../dagre/dist/',
             name: 'dagre'
         }
     ]

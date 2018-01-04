@@ -18,8 +18,9 @@
         <div id="main"></div>
         <script>
             require([
-                'echarts'
-                ], function (echarts) {
+                'echarts',
+                'flowchart'
+                ], function (echarts, flowchart) {
                     var chart = echarts.init(document.getElementById('main'), null, {
 
                     });
@@ -30,6 +31,8 @@
 
                     $.getJSON('./data/simple.json')
                     .done(function (data) {
+
+        // console.log(data);
                         chart.setOption({
 
                             // tooltip: {
@@ -41,7 +44,7 @@
                                 {
                                     type: 'flowchart',
 
-                                    data: [data]
+                                    data: data
 
                                 }
                             ]
